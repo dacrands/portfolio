@@ -27,10 +27,12 @@ module.exports = {
               use: ['babel-loader']
           },
           {
-            test: /\.css$/,
+            test: /\.scss$/,
             use: [
+              process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
               'style-loader',
-              'css-loader'
+              'css-loader',
+              'sass-loader'
             ]
           },
           {
