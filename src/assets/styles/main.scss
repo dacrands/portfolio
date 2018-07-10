@@ -2,7 +2,8 @@
 
 $font-stack: 'Roboto', sans-serif;
 $light: #eee;
-$dark: #38393a;
+$dark: #222324;
+$primary: #1f74d4;
 
 @mixin absoluteCover {
     top: 0;
@@ -16,6 +17,11 @@ body {
   font-family: $font-stack;
   margin: 0;  
   color: $dark;
+  font-size: 1.1rem;
+}
+
+h1 {
+    color: $primary;
 }
 
 
@@ -55,19 +61,19 @@ body {
 
 
 .lead {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 
 .nav {  
-//   outline: 2px dashed royalblue;
+    //   outline: 2px dashed royalblue;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 10em;
     // background: $light;
-//   height: 100vh;
+    //   height: 100vh;
   ul {
     // outline: 2px dashed green;
     height: 100%;
@@ -89,10 +95,10 @@ body {
     transition: all 200ms ease-in;
     font-size: 1.2rem;
     .selected{
-        border-bottom: 1px dashed $dark;
+        border-bottom: 1px dashed $primary;
     }
     &:hover {
-      border-bottom: 1px dashed $dark;
+      border-bottom: 1px dashed $primary;
     }
   }  
 }
@@ -107,7 +113,7 @@ body {
     
 
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     
     h1,
@@ -142,6 +148,14 @@ body {
         margin-right: 1em;
     }
 
+}
+
+.lists {
+    display: flex;
+
+    ul {
+        margin-right: 2em;
+    }
 }
 
 // @media(max-width:1200px) {

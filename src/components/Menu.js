@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import '../assets/styles/main.scss';
 
-var activeStyle = { borderBottom: `1px dashed #38393a` }
+var activeStyle = { borderBottom: `1px dashed #1f74d4` }
 
 class Menu extends Component {
     render() {
