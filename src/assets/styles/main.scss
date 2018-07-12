@@ -3,6 +3,7 @@
 $font-stack: 'Roboto', sans-serif;
 $light: #eee;
 $dark: #222324;
+$med: #383a3b;
 $primary: #1f74d4;
 
 @mixin absoluteCover {
@@ -22,8 +23,18 @@ body {
 
 h1 {
     color: $primary;
+    font-size: 4rem;
 }
 
+h2, h3, h4 {
+    color: $med;
+}
+
+.video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;    
+}
 
 // =========
 // main
@@ -112,10 +123,7 @@ h1 {
     justify-content: center;
     
 
-    h1 {
-        font-size: 4rem;
-    }
-    
+
     h1,
     .lead {        
         margin: 5px 0;

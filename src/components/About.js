@@ -46,7 +46,7 @@ export default class Hello extends Component {
                         
                         <div className="three">
                             <p>Along with web development, I love using Python to do cool things like webscraping,
-                                data visualization, and program RaspberryPis.
+                                visualizing data, and programming RaspberryPis.
                             </p>
                             <p>
 
