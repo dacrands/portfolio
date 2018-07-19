@@ -21,7 +21,8 @@ export default class Hello extends Component {
                             I really enjoy building fast, responsive, and intuitive Node apps.
                         </p>
 
-                        <p>Most of my projects use the following tech:                            
+                        <p>
+                            I spend most of my time using the following tech:                   
                         </p>
                         <div className="lists">
                             <ul>
@@ -44,7 +45,7 @@ export default class Hello extends Component {
                             </ul>
                         </div>
                         
-                        <div className="three">
+                        <div className="content">
                             <p>Along with web development, I love using Python to do cool things like webscraping,
                                 visualizing data, and programming RaspberryPis.
                             </p>

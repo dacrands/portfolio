@@ -6,6 +6,15 @@ import '../assets/styles/main.scss';
 var activeStyle = { borderBottom: `1px dashed #1f74d4` }
 
 class Menu extends Component {
+    constructor() {
+        super();
+
+    }
+
+    
+
+
+
     render() {
         return (
             <nav className="nav">

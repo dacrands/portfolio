@@ -2,8 +2,8 @@
 
 $font-stack: 'Roboto', sans-serif;
 $light: #eee;
-$dark: #222324;
-$med: #383a3b;
+$dark: #333536;
+$med: #646769;
 $primary: #1f74d4;
 
 @mixin absoluteCover {
@@ -12,13 +12,12 @@ $primary: #1f74d4;
     left: 0;
     right: 0;
 }
-  
 
 body {
-  font-family: $font-stack;
-  margin: 0;  
-  color: $dark;
-  font-size: 1.1rem;
+    font-family: $font-stack;
+    margin: 0;  
+    color: $dark;
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -30,9 +29,31 @@ h2, h3, h4 {
     color: $med;
 }
 
+.strong {
+    font-weight: bold;
+    color: $med;
+}
+
+.lead {
+    font-size: 1.6rem;
+    // width: 100%;
+}
+
+// applied to p element/containers for readability
+.content {
+    max-width: 550px;
+}
+
+.header {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    // background: #f9f9f9;
+}
+
 .video {
-    width: 100%;
-    max-width: 800px;
+    max-width: 100%;
+    // max-width: 800px;
     height: auto;    
 }
 
@@ -51,7 +72,7 @@ h2, h3, h4 {
 
 
 .main {
-    outline: 2px dashed lightseagreen;
+    // outline: 2px dashed lightseagreen;
     display: grid;
     grid-template-columns: 10em 1fr;
     height: 100vh;
@@ -70,10 +91,6 @@ h2, h3, h4 {
     padding: 0 2em;
 }
 
-
-.lead {
-    font-size: 1.6rem;
-}
 
 
 .nav {  
@@ -151,7 +168,7 @@ h2, h3, h4 {
     // justify-content: end;
 
     p {
-        max-width: 550px;
+        
         // float: left;
         margin-right: 1em;
     }
@@ -166,8 +183,72 @@ h2, h3, h4 {
     }
 }
 
-// @media(max-width:1200px) {
-//     .container {
-//         max-width: 700x;
+
+
+
+
+// .project__list {
+//     display: flex;
+// }
+
+// .project__content{
+//     display: flex;
+
+//     div {
+//         margin: 1.5em;
 //     }
 // }
+
+
+.project {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+    margin: 3em 0;
+    padding: 1em;
+    display: grid;
+    grid-template-areas: "info video"
+                         "features tech";
+    grid-gap: 1em;
+}
+
+.project__list {
+    p {
+        margin: 0;
+    }
+    ul {
+        // margin: 1em 0;
+        margin: 0;
+        padding: 1em;
+    }
+}
+
+.project__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        margin: 0;
+    }
+    // text-align: left;
+}
+
+// @media(max-width:960px) {
+//     .project__content {
+//         flex-direction: column;
+//     }
+// }
+
+@media(max-width:768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        transform: translateX(-100%);
+    }
+}
+
+@media(max-width:320px) {
+    h1 {
+        font-size: 16vw;
+    }
+}
