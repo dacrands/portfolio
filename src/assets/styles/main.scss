@@ -99,8 +99,8 @@ h2, h3, h4 {
     top: 0;
     left: 0;
     height: 100%;
-    width: 10em;
-    // background: $light;
+    min-width: 8em;
+    background: #ffffff;
     //   height: 100vh;
   ul {
     // outline: 2px dashed green;
@@ -208,6 +208,8 @@ h2, h3, h4 {
     grid-template-areas: "info video"
                          "features tech";
     grid-gap: 1em;
+    background: #ffffff;
+    border-radius: 5px;
 }
 
 .project__list {
@@ -231,6 +233,21 @@ h2, h3, h4 {
     // text-align: left;
 }
 
+.project__video {
+    background: $primary;
+    // padding: 2 m;
+    // margin: 1em;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    a {
+        margin: .5rem 1em;
+    }
+}
+
 // @media(max-width:960px) {
 //     .project__content {
 //         flex-direction: column;
@@ -238,14 +255,27 @@ h2, h3, h4 {
 // }
 
 @media(max-width:768px) {
-    .main {
-        grid-template-columns: 1fr;
-    }
 
-    .nav {
-        transform: translateX(-100%);
+    .project {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+        margin: 3em 0;
+        padding: 1em;
+        display: grid;
+        grid-template-areas: "info"
+                            "video"
+                            "features"
+                            "tech";
+        grid-gap: 1em;
     }
 }
+    // .main {
+    //     grid-template-columns: 1fr;
+    // }
+
+    // .nav {
+    //     transform: translateX(-100%);
+    // }
+
 
 @media(max-width:320px) {
     h1 {

@@ -46,13 +46,13 @@ export default class Hello extends Component {
                         </div>
                         
                         <div className="content">
+                            <p>
+                                I make apps that are fast, responsive, and easy to use.
+                            </p>
                             <p>Along with web development, I love using Python to do cool things like webscraping,
                                 visualizing data, and programming RaspberryPis.
-                            </p>
-                            <p>
-
-                            </p>
-                            <p>
+                            </p>                        
+                            {/* <p>
                                 When I'm not programming, I work as a staff trainer for 
                                 a non-profit that enables individuals with
                                 developmental disabilities to reach their maximum potential. 
@@ -60,7 +60,7 @@ export default class Hello extends Component {
                                 information into an electronic health record system to, as a
                                 certified Red Cross instructor, teaching the skills necessary to provide
                                 care during a life-threatening emergency.
-                            </p>
+                            </p> */}
                         </div>
 
                         
