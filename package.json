@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "if-env NODE_ENV=production && npm run prod || npm run dev",
     "dev": "webpack-dev-server --open --config webpack.dev.js -d",
-    "build": "webpack --config webpack.prod.js && node server.js",
-    "postbuild": "webpack --config webpack.prod.js"
+    "prod": "webpack --config webpack.prod.js && node server.js"
   },
   "author": "dcrandall",
   "license": "ISC",
