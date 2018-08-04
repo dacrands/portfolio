@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-import video from '../assets/video/bergen.mp4';
+import bergen from '../assets/video/bergen.mp4';
+import nyt from '../assets/video/nyt.mp4';
 
 export default class Projects extends Component {
 
     componentDidMount() {
-        document.body.style.background = "#1f74d4";
+        // document.body.style.background = "#1f74d4";
     }
 
     componentWillUnmount() {
@@ -19,7 +20,7 @@ export default class Projects extends Component {
             <div>
                 <div className="container">
                     <header className="header">
-                        <h1 style={{ color:"#f9f9f9"  }}>Projects</h1>   
+                        <h1>Projects</h1>   
                     </header>
                     <section className="projects">
                         <article className="project">
@@ -43,27 +44,30 @@ export default class Projects extends Component {
                             {/* </div> */}
                             <div className="project__video">
                                 <video className="video" autoPlay loop playsInline>
-                                    <source src={video} type="video/mp4" />
+                                    <source src={bergen} type="video/mp4" />
                                 </video>
                             </div>
-                            <div className="project__list">
-                                <p className="strong">Features:</p>
-                                <ul>
-                                    <li>responsive web design (no CSS libraries)</li>
-                                    <li>asset lazy loading</li>
-                                    <li>async fetch requests</li>
-                                    {/* <li>React Router</li> */}
-                                </ul>
-                            </div> 
-                            <div className="project__list">
-                                <p className="strong"> Tech used:</p>
-                                <ul>
-                                    <li>Express</li>
-                                    <li>React Router 4</li>
-                                    <li>Webpack 4</li>                                    
-                                    <li>React Router</li>
-                                </ul>
-                            </div> 
+                            <div className="project__features">
+                                <div className="project__list">
+                                    <p className="strong--dark">Features:</p>
+                                    <ul>
+                                        <li>responsive web design (no CSS libraries)</li>
+                                        <li>asset lazy loading</li>
+                                        <li>async fetch requests</li>
+                                        {/* <li>React Router</li> */}
+                                    </ul>
+                                </div> 
+                                <div className="project__list">
+                                    <p className="strong--dark"> Tech used:</p>
+                                    <ul>
+                                        <li>Express</li>
+                                        <li>React Router 4</li>
+                                        <li>Webpack 4</li>                                    
+                                        <li>React Router</li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            
                             
                         </article>                        
                         <article className="project">
@@ -91,28 +95,31 @@ export default class Projects extends Component {
                                 
                             {/* </div> */}
                             <div className="project__video">
-                            <video className="video" autoPlay>
-                                <source src={video}/>
+                            <video className="video" autoPlay loop playsInline>
+                                <source src={nyt}/>
                             </video>
                             </div>
-                            <div className="project__list">
-                                <p className="strong">Features:</p>
-                                <ul>
-                                    <li>responsive web design (no CSS libraries)</li>
-                                    <li>asset lazy loading</li>
-                                    <li>async fetch requests</li>
-                                    {/* <li>React Router</li> */}
-                                </ul>
-                            </div> 
-                            <div className="project__list">
-                                <p className="strong"> Tech used:</p>
-                                <ul>
-                                    <li>Redux</li>
-                                    <li>React Router 4</li>
-                                    <li>Webpack 4</li>                                    
-                                    <li>Sass</li>
-                                </ul>
-                            </div> 
+                            <div className="project__features">
+                                <div className="project__list">
+                                    <p className="strong">Features:</p>
+                                    <ul>
+                                        <li>responsive web design (no CSS libraries)</li>
+                                        <li>asset lazy loading</li>
+                                        <li>async fetch requests</li>
+                                        {/* <li>React Router</li> */}
+                                    </ul>
+                                </div> 
+                                <div className="project__list">
+                                    <p className="strong"> Tech used:</p>
+                                    <ul>
+                                        <li>Redux</li>
+                                        <li>React Router 4</li>
+                                        <li>Webpack 4</li>                                    
+                                        <li>Sass</li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            
                             
                         </article>                        
                         <article className="project">
@@ -132,9 +139,10 @@ export default class Projects extends Component {
                             {/* </div> */}
                             <div className="project__video">
                             <video className="video" autoPlay>
-                                <source src={video}/>
+                                <source src={nyt}/>
                             </video>
                             </div>
+                            <div className="project__features">
                             <div className="project__list">
                                 <p className="strong">Features:</p>
                                 <ul>
@@ -153,6 +161,8 @@ export default class Projects extends Component {
                                     <li>React Router</li>
                                 </ul>
                             </div> 
+                            </div>
+                            
                             
                         </article>                        
                     </section>
