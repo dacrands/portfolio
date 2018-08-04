@@ -27,19 +27,23 @@ export default class Projects extends Component {
                         
                             {/* <div className="project__content"> */}
                             
-                                <div className="project__text content">
+                                <div className="project__text">
+                                    <div>
                                     <h2>Bergen STEM</h2>
-
+                                    <div className="project__text-p content"> 
                                     <p>
                                         Single page React app created for the STEM Department at
                                         Bergen Community College.
                                     </p>   
+                                    </div>
+                                    </div>
+                                    
                                     <div className="links">
                                         <a href="#">Github Repo</a>                       
                                         <a href="https://www.bergenstem.com" target="_blank">Bergen STEM</a>                       
                                     </div>
                                     
-                                </div>                                
+                            </div>                                
                                 
                             {/* </div> */}
                             <div className="project__video">
@@ -49,7 +53,7 @@ export default class Projects extends Component {
                             </div>
                             <div className="project__features">
                                 <div className="project__list">
-                                    <p className="strong--dark">Features:</p>
+                                    <p className="">Features:</p>
                                     <ul>
                                         <li>responsive web design (no CSS libraries)</li>
                                         <li>asset lazy loading</li>
@@ -58,7 +62,7 @@ export default class Projects extends Component {
                                     </ul>
                                 </div> 
                                 <div className="project__list">
-                                    <p className="strong--dark"> Tech used:</p>
+                                    <p className=""> Tech used:</p>
                                     <ul>
                                         <li>Express</li>
                                         <li>React Router 4</li>
@@ -66,26 +70,27 @@ export default class Projects extends Component {
                                         <li>React Router</li>
                                     </ul>
                                 </div> 
-                            </div>
-                            
-                            
+                            </div>                                                        
                         </article>                        
                         <article className="project">
                         
                             {/* <div className="project__content"> */}
                             
-                                <div className="project__text content">
-                                    <h2 className="strong">New York Times App</h2>
-                                    <project__text-p>
-                                        <p>
-                                            The NYT API allows you to access their archives, which contains
-                                            articles dating back to the 19<sup>th</sup> century.                                         
-                                        </p>                                                     
-                                        <p>
-                                            Set a custom year range between the years 1900 and 2018
-                                            and hundreds of article abstracts from a random month.
-                                        </p>          
-                                    </project__text-p>
+                                <div className="project__text">
+                                    <div>
+                                        <h2 className="strong">New York Times App</h2>
+                                        <div className="project__text-p content"> 
+                                            <p>
+                                                The NYT API allows you to access their archives, which contains
+                                                articles dating back to the 19<sup>th</sup> century.                                         
+                                            </p>                                                     
+                                            <p>
+                                                Set a custom year range between the years 1900 and 2018
+                                                and hundreds of article abstracts from a random month.
+                                            </p>          
+                                        </div>
+                                    </div>
+                                    
                                     <div className="links">
                                         <a href="#">Github Repo</a>                       
                                         <a href="https://www.bergenstem.com" target="_blank">Bergen STEM</a>                       

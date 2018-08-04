@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Production'
+      title: 'David Crandall'
     })
   ],
   output: {
@@ -32,7 +32,6 @@ module.exports = {
             test: /\.scss$/,
             use: [
               process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
-              'style-loader',
               'css-loader',
               'sass-loader'
             ]
