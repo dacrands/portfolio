@@ -8,7 +8,7 @@ export default class Hello extends Component {
                     <div className="center landing">
                         <h1 className={"h1"}>David Crandall</h1>
                         <hr className="hr"/>
-                        <p className="lead">Full Stack Web Developer</p>
+                        <p className="strong">Full Stack Web Developer</p>
                     </div>                
                 </div>            
             </div>

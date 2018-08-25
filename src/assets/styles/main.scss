@@ -45,11 +45,6 @@ h4 {
     font-weight: bold;
 }
 
-.lead {
-    font-size: 1.4rem;
-    margin: 3em 0;
-    // width: 100%;
-}
 
 // applied to p element/containers for readability
 .content {
@@ -57,10 +52,10 @@ h4 {
 }
 
 .header {
-    height: 25vh;
+    height: 34vh;
     display: flex;
     // align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     // background: #f9f9f9;
 }
@@ -90,10 +85,6 @@ h4 {
     display: grid;
     grid-template-columns: 10em 1fr;
     height: 100vh;
-    // padding: 1em;
-    // grid-auto-rows: 100vh;
-    // overflow-y: hidden;
-    // max-width: 100vw;
 }
 
 
@@ -114,9 +105,11 @@ h4 {
     left: 0;
     height: 100%;
     min-width: 8em;
-    background: #ffffff;
+    // background: #ffffff;
+    background: $light;
     transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
     //   height: 100vh;
+
   ul {
     // outline: 2px dashed green;
     height: 100%;
@@ -133,13 +126,16 @@ h4 {
   
   a {
     color: $dark;
+    // color: $primary;
     text-decoration: none;
     border-bottom: 1px dashed rgba(0,0,0,0);
     transition: all 200ms ease-in;
     font-size: 1.2rem;
+
     .selected{
         border-bottom: 1px dashed $primary;
     }
+
     &:hover {
       border-bottom: 1px dashed $primary;
     }
@@ -154,6 +150,7 @@ h4 {
     z-index: 999;
     top: 1rem;
     right: 1rem;    
+
     h1 {
         margin: 0;
     }
@@ -165,31 +162,19 @@ h4 {
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
-    
-
+    justify-content: center;    
 
     h1 {        
         margin: 5px 0;
     }
 
     p {
-        margin: 15px 0;
-        
+        margin: 15px 0;        
     }
 
     .lead {
         margin: 1em 0;
-    }
-
-    
-    
-}
-
-.about {
-    ul {
-        margin: 0;
-    }
+    }    
 }
 
 .three {
@@ -227,20 +212,16 @@ h4 {
     //                      "links links";
     
     border: 1px solid #DADADA;
-    border-radius: 15px;
+    border-radius: 5px;
     // background: rgb(39, 40, 41);
     // background: $primary;
     // background: #f8f8f8;
     // color: $light;
 
-    h2 {
-        // color: $light; 
-        // color: $primary;       
-    }
-
     a {
         // color: $light;   
-        transition: all 200ms ease;     
+        transition: all 200ms ease;  
+
         &:visited {
             color: orange;
         }
@@ -248,10 +229,7 @@ h4 {
         &:hover {
             color: #181616;
         }
-    }
-
-
-    
+    }    
 }
 
 .project__features {
@@ -264,6 +242,10 @@ h4 {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     // color: $light;
+
+    // h2 {
+    //     color: $light;
+    // }
 }
 
 .project__list {
@@ -271,6 +253,7 @@ h4 {
     p {
         margin: 0;
     }
+
     ul {
         // margin: 1em 0;
         margin: 0;
@@ -288,10 +271,7 @@ h4 {
     padding: 15px;
     display: grid;
     grid-template-columns: 60% 1fr;
-    padding-bottom: 1em;
-    h2 {
-        // margin: 0;
-    }
+    padding-bottom: 1em;   
     // text-align: left;
 }
 
@@ -311,16 +291,11 @@ h4 {
     align-items: center;
     justify-content: center;
     width: 100%;
+
     a {
         margin: .5rem 1em;
     }
 }
-
-// @media(max-width:960px) {
-//     .project__content {
-//         flex-direction: column;
-//     }
-// }
 
 @media(max-width:768px) {
 
@@ -329,11 +304,11 @@ h4 {
         margin: 3em 0;
         // padding: 1em;
         display: grid;
+        grid-gap: 1em;
         grid-template-areas: "info"
                             "video"
                             "features"
-                            "tech";
-        grid-gap: 1em;
+                            "tech";        
     }
 
     .project__text {
@@ -341,22 +316,18 @@ h4 {
         grid-template-columns: 1fr;
     }
 
+    .project__features {
+        flex-direction: column;
+    }
+
     .links {
         align-items: flex-start;
     }
 }
-    // .main {
-    //     grid-template-columns: 1fr;
-    // }
 
-    // .nav {
-    //     transform: translateX(-100%);
-    // }
-
-
-@media(max-width:320px) {
-    h1 {
-        font-size: 16vw;
+@media(max-width:505px) {
+    .h1 {
+        font-size: 12vw;
     }
 }
 
@@ -368,11 +339,13 @@ h4 {
     .nav {
         transform: translateX(-100%);
         width: 100%;        
+
         li {
             text-align: center;
         }
         
     }
+
     .nav__show {
         transform: translateY(0);
     }
