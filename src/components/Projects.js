@@ -21,6 +21,7 @@ export default class Projects extends Component {
                 <div className="container">
                     <header className="header">
                         <h1>Projects</h1>   
+                        <hr className="hr"/>
                     </header>
                     <section className="projects">
                         <article className="project">
@@ -86,14 +87,14 @@ export default class Projects extends Component {
                                             </p>                                                     
                                             <p>
                                                 Set a custom year range between the years 1900 and 2018
-                                                and hundreds of article abstracts from a random month.
+                                                and read hundreds of article abstracts from a random month.
                                             </p>          
                                         </div>
                                     </div>
                                     
                                     <div className="links">
                                         <a href="#">Github Repo</a>                       
-                                        <a href="https://www.bergenstem.com" target="_blank">Bergen STEM</a>                       
+                                        <a href="https://nytcrands.herokuapp.com/" target="_blank">NYT App</a>                       
                                     </div>
                                     
                                 </div>                                

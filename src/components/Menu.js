@@ -30,7 +30,7 @@ class Menu extends Component {
                     <h1>
                     {   
                         this.state.showBurger
-                        ? "\u22EE"
+                        ? "\u2261"
                         : "\u2715"
                     }
                     </h1>
@@ -40,6 +40,7 @@ class Menu extends Component {
                         <li><NavLink onClick={this.showNav}  exact to="/" activeStyle={activeStyle}>Home</NavLink></li>
                         <li><NavLink onClick={this.showNav}  to="/about" activeStyle={activeStyle}>About</NavLink></li>
                         <li><NavLink onClick={this.showNav} to="/projects" activeStyle={activeStyle}>Projects</NavLink></li>
+                        <li><a onClick={this.showNav} target="_blank" href="https://dacrands.github.io/">Blog</a></li>
                         <li><NavLink onClick={this.showNav} to="/contact" activeStyle={activeStyle}>Contact</NavLink></li>
                     </ul>
                 </nav>
