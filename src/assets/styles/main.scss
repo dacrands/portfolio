@@ -25,7 +25,9 @@ h1 {
     font-size: 4rem;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     color: $med;
 }
 
@@ -107,6 +109,7 @@ h2, h3, h4 {
     height: 100%;
     min-width: 8em;
     background: #ffffff;
+    transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
     //   height: 100vh;
   ul {
     // outline: 2px dashed green;
@@ -135,6 +138,19 @@ h2, h3, h4 {
       border-bottom: 1px dashed $primary;
     }
   }  
+}
+
+.nav__close {
+    display: none;
+    background: none; 
+    border: none;
+    position: absolute;
+    z-index: 999;
+    top: 1rem;
+    right: 2rem;    
+    h1 {
+        margin: 0;
+    }
 }
 
 .center {
@@ -344,3 +360,25 @@ h2, h3, h4 {
         font-size: 16vw;
     }
 }
+
+@media(max-width:768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }   
+
+    .nav {
+        transform: translateX(-100%);
+        width: 100%;        
+        li {
+            text-align: center;
+        }
+        
+    }
+    .nav__show {
+        transform: translateY(0);
+    }
+
+    .nav__close {
+        display: block;
+    }
+  }

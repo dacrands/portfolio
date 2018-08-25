@@ -31,4 +31,10 @@
       }
     }
     
-  }
+}
+
+@media(max-width:768px) {
+  .nav {
+    background: blue;
+  }   
+}
