@@ -14,13 +14,14 @@ export default class Hello extends Component {
         return(
             <div>
                 <div className="container">
-                    <div className="center about">
-                        <h1>About</h1>
+                    <header className="header">
+                        <h1>About</h1>   
                         <hr className="hr"/>
+                    </header>
+                    <main className="about">                        
                         <p class="strong">
                             I really enjoy building fast, responsive, and intuitive React apps.
                         </p>
-
                         <p>
                             I spend most of my time using the following tech:                   
                         </p>
@@ -43,8 +44,7 @@ export default class Hello extends Component {
                                     })
                                 }
                             </ul>
-                        </div>
-                        
+                        </div>                        
                         <div className="content">
                             <p>
                                 Although most of my current work involves the front-end, I am also familiar with
@@ -56,11 +56,8 @@ export default class Hello extends Component {
                             
                             <p>You may view some of my work on my <a href="https://github.com/dacrands">github</a>.</p>
                             <p>To learn more about what I do, feel free to view my <a href="https://dacrands.github.io">blog</a> or <a href="mailto:davecrands@gmail.com">email me</a>.                            </p>
-                        </div>
-
-                        
-                        
-                    </div>                
+                        </div>                                                
+                    </main>                
                 </div>            
             </div>
         );
