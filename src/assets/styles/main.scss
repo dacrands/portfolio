@@ -52,7 +52,7 @@ h4 {
 }
 
 .header {
-    height: 20vh;
+    height: 10em;
     display: flex;
     // align-items: center;
     justify-content: flex-end;
@@ -147,18 +147,6 @@ h4 {
   }  
 }
 
-.link__tip {
-    position: absolute;
-    max-width: 300px;
-    width: 100%;
-    padding: 0.5rem;        
-    border-radius: 5px;
-    background: $primary;    
-    color: $light;    
-    transform: translateX(50%);    
-    visibility: hidden;
-    font-size: 0.9rem;
-}
 
 .nav__close {
     display: none;
@@ -171,6 +159,10 @@ h4 {
 
     h1 {
         margin: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
     }
 }
 
@@ -198,27 +190,16 @@ h4 {
 
 .lists {
     display: flex;
-
+    flex-wrap: wrap;
     ul {
         margin-right: 2em;
     }
 }
 
 .project {
-    // box-shadow: 0 3px 6px rgba(0,0,0,0.25);
-    margin: 3em 0;
-    // padding: 2em;
-    // display: grid;
-    // grid-template-areas: "info features"
-    //                      "video video"
-    //                      "links links";
-    
+    margin: 3em 0; 
     border: 1px solid #DADADA;
     border-radius: 5px;
-    // background: rgb(39, 40, 41);
-    // background: $primary;
-    // background: #f8f8f8;
-    // color: $light;
 
     a {
         // color: $light;   
@@ -237,17 +218,9 @@ h4 {
 .project__features {
     display: flex;
     justify-content: space-around;
-    // margin-top: 1em;
     padding: 1em;
-    // background: $primary;
-    // background: rgb(39, 40, 41);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    // color: $light;
-
-    // h2 {
-    //     color: $light;
-    // }
 }
 
 .project__list {
@@ -299,8 +272,25 @@ h4 {
     }
 }
 
-@media(max-width:768px) {
+@media(min-width: 768px) {
+    .link__tip {
+        position: absolute;
+        max-width: 300px;
+        width: 100%;
+        padding: 0.5rem;        
+        border-radius: 5px;
+        background: $primary;    
+        color: $light;    
+        transform: translateY(2em);    
+        visibility: hidden;
+        font-size: 0.9rem;
+    }
+}
 
+@media(max-width:768px) {
+    .link__tip {
+        display: none;
+    }
     .project {
         // box-shadow: 0 3px 6px rgba(0,0,0,0.25);
         margin: 3em 0;
@@ -315,7 +305,7 @@ h4 {
 
     .project__text {
         // padding: 0;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
 
     .project__features {
@@ -335,7 +325,7 @@ h4 {
 
 @media(max-width:768px) {
     .main {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }   
 
     .nav {

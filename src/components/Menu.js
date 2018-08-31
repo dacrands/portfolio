@@ -19,6 +19,13 @@ class Menu extends Component {
         this.setState({ showBurger: !tempBool });
     }
 
+    componentDidMount() {
+        window.addEventListener('resize', () => {
+            this.refs.nav.classList.remove('nav__show')
+            this.setState({ showBurger: true })
+        });
+    }
+
     
 
 

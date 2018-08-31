@@ -19,7 +19,7 @@ export default class Hello extends Component {
                         <hr className="hr"/>
                     </header>
                     <main className="about">                        
-                        <p class="strong">
+                        <p className="strong">
                             I really enjoy building fast, responsive, and intuitive React apps.
                         </p>
                         <p>
