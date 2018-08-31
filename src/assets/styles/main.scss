@@ -52,7 +52,7 @@ h4 {
 }
 
 .header {
-    height: 34vh;
+    height: 20vh;
     display: flex;
     // align-items: center;
     justify-content: flex-end;
@@ -84,7 +84,7 @@ h4 {
     // outline: 2px dashed lightseagreen;
     display: grid;
     grid-template-columns: 10em 1fr;
-    height: 100vh;
+    // height: 100vh;
 }
 
 
@@ -122,6 +122,9 @@ h4 {
   
   li {
     margin: 1em;
+    &:hover .link__tip {
+        visibility: visible;
+    }
   }
   
   a {
@@ -139,7 +142,22 @@ h4 {
     &:hover {
       border-bottom: 1px dashed $primary;
     }
+
+    
   }  
+}
+
+.link__tip {
+    position: absolute;
+    max-width: 300px;
+    width: 100%;
+    padding: 0.5rem;        
+    border-radius: 5px;
+    background: $primary;    
+    color: $light;    
+    transform: translateX(50%);    
+    visibility: hidden;
+    font-size: 0.9rem;
 }
 
 .nav__close {
@@ -177,22 +195,6 @@ h4 {
     }    
 }
 
-.three {
-    // outline: 2px solid rebeccapurple;
-    // margin: 0 auto;
-    // display: grid;
-    // grid-gap: 2em;
-    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
-    // grid-auto-rows: 1fr;
-    // justify-content: end;
-
-    p {
-        
-        // float: left;
-        margin-right: 1em;
-    }
-
-}
 
 .lists {
     display: flex;
