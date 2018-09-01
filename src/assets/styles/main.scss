@@ -34,6 +34,14 @@ body {
     // -moz-osx-font-smoothing: grayscale;
 }
 
+.img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;    
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);       
+}
+
 
 p,
 li {
@@ -54,7 +62,7 @@ h2,
 h3,
 h4 {
     color: $med;    
-    // margin-top: 0;
+    margin-top: 0;
 }
 
 .strong {
@@ -198,23 +206,19 @@ h4 {
 
 .center {
     // outline: 3px dashed black;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;    
 
     h1 {        
-        margin: 5px 0;
-    }
-
-    p {
-        margin: 15px 0;        
-    }
-
-    .lead {
-        margin: 1em 0;
+        margin-bottom: 0.8rem;
     }    
+
+    h3 {
+        padding-left: 3px;
+    }
 }
 
 
@@ -230,14 +234,14 @@ h4 {
 
 
 // =======================
-//          ABOUT 
+//          SKILLS
 // =======================
-.about--skill {
-    margin-bottom: 2rem;    
+.skills--item {
+    margin-bottom: 3rem;    
     span {
         background: $primary;
         color: $light;
-        margin: 0.5rem;
+        margin-right: 0.5rem;
         padding: 0.5rem;
         border-radius: 5px;
         font-weight: 700;

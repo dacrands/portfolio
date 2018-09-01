@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 export default class Hello extends Component {
 
     render() {
@@ -25,7 +26,7 @@ export default class Hello extends Component {
                             
                             <p>You may view some of my work on my <a href="https://github.com/dacrands">github</a>.</p>
                             <p>To learn more about what I do, feel free to view my <a href="https://dacrands.github.io">blog</a> or <a href="mailto:davecrands@gmail.com">email me</a>.                            </p>
-                        </div>                                                
+                        </div>                                                                  
                     </main>                
                 </div>            
             </div>

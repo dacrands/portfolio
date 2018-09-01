@@ -6,8 +6,8 @@ export default class Skills extends Component {
     super();
 
     this.state = {
-        lang: ['Python', 'NodeJS', 'JavaScript','HTML', 'CSS/Sass'],
-        frameworks: ['React', 'Redux'],
+        lang: ['Python', 'NodeJS', 'JavaScript','HTML', 'CSS'],
+        tools: ['Git', 'Heroku', 'VSCode'],
         libs: ['React', 'Redux', 'Express', 'Sass', 'Webpack','MongoDB'],
         skills: ['Responsive Web Design', 'Semantic HTML', 'REST APIs', 'Ajax', 'Data Visualization', 'Public Speaking']
     }
@@ -21,9 +21,9 @@ export default class Skills extends Component {
           <h1 className="primary">Skills</h1>
         </header>
         
-          <section className="about--skill">
+          <section className="skills--item">
               <h3 className="">Skills</h3>
-              <hr className="hr"/>
+              {/* <hr className="hr"/> */}
               <div>
                 {
                     this.state.skills.map(skill => {
@@ -33,9 +33,9 @@ export default class Skills extends Component {
               </div>              
             </section>
 
-            <section className="about--skill">
+            <section className="skills--item">
               <h3 className="">Languages</h3>
-              <hr className="hr"/>
+              {/* <hr className="hr"/> */}
               <div>
                   {
                       this.state.lang.map(lang => {
@@ -45,13 +45,25 @@ export default class Skills extends Component {
               </div>            
             </section>
 
-            <section className="about--skill">
+            <section className="skills--item">
               <h3 className="">Libraries</h3>
-              <hr className="hr"/>
+              {/* <hr className="hr"/> */}
               <div>
                   {
                       this.state.libs.map(lib => {
                           return <span>{lib}</span>
+                      })
+                  }
+              </div>                            
+            </section>
+
+            <section className="skills--item">
+              <h3 className="">Tools</h3>
+              {/* <hr className="hr"/> */}
+              <div>
+                  {
+                      this.state.tools.map(tool => {
+                          return <span>{tool}</span>
                       })
                   }
               </div>                            
