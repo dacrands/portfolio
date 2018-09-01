@@ -21,13 +21,13 @@ export default class Projects extends Component {
             <div>
                 <div className="container">
                     <header className="header">
-                        <h1>Projects</h1>   
-                        <hr className="hr"/>
+                        <h1 className="primary">Projects</h1>   
+                        {/* <hr className="hr"/> */}
                     </header>
                     <section className="projects">
                         <article className="project">                                                    
                             <div className="project__text">
-                                <div>
+                                <div>                                    
                                     <h2>Bergen STEM</h2>
                                     <div className="project__text-p content"> 
                                         <p>
@@ -36,9 +36,9 @@ export default class Projects extends Component {
                                         </p>   
                                     </div>
                                 </div>                                    
-                                <div className="links">
-                                    <a href="#">Github Repo</a>                       
+                                <div className="project--links">
                                     <a href="https://www.bergenstem.com" target="_blank">Bergen STEM</a>                       
+                                    <a href="#">Github Repo</a>                                                           
                                 </div>                                    
                             </div>                                                                
                             {/* </div> */}
@@ -49,16 +49,15 @@ export default class Projects extends Component {
                             </div>
                             <div className="project__features">
                                 <div className="project__list">
-                                    <p className="">Features:</p>
+                                    <p className="strong">Features:</p>
                                     <ul>
                                         <li>responsive web design (no CSS libraries)</li>
                                         <li>asset lazy loading</li>
-                                        <li>async fetch requests</li>
-                                        {/* <li>React Router</li> */}
+                                        <li>async fetch requests</li>                                        
                                     </ul>
                                 </div> 
                                 <div className="project__list">
-                                    <p className=""> Tech used:</p>
+                                    <p className="strong"> Tech used:</p>
                                     <ul>
                                         <li>Express</li>
                                         <li>React Router 4</li>
@@ -85,9 +84,9 @@ export default class Projects extends Component {
                                     </div>
                                 </div>
                                 
-                                <div className="links">
-                                    <a href="#">Github Repo</a>                       
+                                <div className="project--links">
                                     <a href="https://nytcrands.herokuapp.com/" target="_blank">NYT App</a>                       
+                                    <a href="#">Github Repo</a>                                                           
                                 </div>                                    
                             </div>                                                                                            
                             <div className="project__video">
@@ -132,9 +131,9 @@ export default class Projects extends Component {
                                         </p>          
                                     </div>
                                 </div>                                    
-                                <div className="links">
-                                    <a href="#">Github Repo</a>                       
-                                    <a href="https://dacrands.github.io" target="_blank">Blog Site</a>                       
+                                <div className="project--links">
+                                    <a href="https://dacrands.github.io" target="_blank">Blog Site</a> 
+                                    <a href="#">Github Repo</a>                                                                                 
                                 </div>                                    
                             </div>                                                                                            
                             <div className="project__video">

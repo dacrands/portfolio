@@ -5,6 +5,7 @@ $light: #eee;
 $dark: #333536;
 $med: #646769;
 $primary: #1f74d4;
+$primary-dark: #14539b;
 
 @mixin absoluteCover {
     top: 0;
@@ -13,36 +14,62 @@ $primary: #1f74d4;
     right: 0;
 }
 
+html {
+    font-size: 16px;
+    min-width: 300px;
+    text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;  
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
 body {
     font-family: $font-stack;
     margin: 0;  
-    color: $dark;
-    font-size: 1.1rem;
+    color: $dark;    
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-    color: $primary;
-    // font-size: 2.4rem;
+
+p,
+li {
+    line-height: 135%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .h1 {
     font-size: 4rem;
 }
 
+h1 {
+    font-size: 250%;
+}
+
+h1,
 h2,
 h3,
 h4 {
-    color: $med;
+    color: $med;    
+    // margin-top: 0;
 }
 
 .strong {
     font-weight: bold;
     color: $med;
+    // font-size: 1.4rem;
 }
 
 .strong--dark {
     color: #c3cbcf;
     font-weight: bold;
+}
+
+.primary {
+    color: $primary;
 }
 
 
@@ -98,6 +125,9 @@ h4 {
 
 
 
+// =======================
+//          NAV
+// =======================
 .nav {  
     //   outline: 2px dashed royalblue;
     position: fixed;
@@ -196,86 +226,110 @@ h4 {
     }
 }
 
+
+
+
+// =======================
+//          ABOUT 
+// =======================
+.about--skill {
+    margin-bottom: 2rem;    
+    span {
+        background: $primary;
+        color: $light;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        font-weight: 700;
+        transition: all 200ms ease-in;
+        &:hover {
+            background: $dark;
+        }
+    }    
+
+    div {
+        // outline: 1px solid red;
+        // padding: 1em;
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    
+}
+
+
+// =======================
+//          PROJECT
+// =======================
 .project {
-    margin: 3em 0; 
-    border: 1px solid #DADADA;
+    // margin: 3em 0; 
+    margin-bottom: 7rem;
+    // border: 1px solid #DADADA;
     border-radius: 5px;
 
     a {
         // color: $light;   
         transition: all 200ms ease;  
-
-        &:visited {
-            color: orange;
+        padding: 0.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        background: $primary;
+        color: $light;
+        margin: .5rem 1em;   
+        margin-left: 0;     
+        font-weight: 700;
+        &:hover {
+            background: $primary-dark;
         }
 
-        &:hover {
-            color: #181616;
+        &:last-of-type {
+            background: $med;
+            &:hover {
+                background: $dark;
+            }
         }
     }    
 }
 
-.project__features {
+.project--links {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project__features {
+    display: flex;    
     padding: 1em;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
 .project__list {
-    // float: left;
     p {
         margin: 0;
     }
 
     ul {
-        // margin: 1em 0;
-        margin: 0;
-        padding: 1em;
+        padding: 0.5rem 0;
+        margin: 0 1rem;
+        margin-right: 2rem;
     }
     
 }
 
 .project__text {
-    grid-area: info;
-    display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // width: 100%;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 60% 1fr;
-    padding-bottom: 1em;   
-    // text-align: left;
+    // padding: 1em;
+    div {
+        margin-bottom: 2rem;
+    }
 }
 
 .project__video {    
-    // grid-area: video;
-    // background: $primary;
-    // padding: 2 m;
-    // margin: 1em;
     background: rgb(39, 40, 41);
-}
-
-
-.links {
-    // grid-area: links;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    a {
-        margin: .5rem 1em;
-    }
 }
 
 @media(min-width: 768px) {
     .link__tip {
         position: absolute;
-        max-width: 300px;
+        // max-width: 20em;
         width: 100%;
         padding: 0.5rem;        
         border-radius: 5px;
@@ -284,6 +338,7 @@ h4 {
         transform: translateY(2em);    
         visibility: hidden;
         font-size: 0.9rem;
+        line-height: 125%;
     }
 }
 

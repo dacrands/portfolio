@@ -9,7 +9,6 @@ class Menu extends Component {
     constructor() {
         super();
         this.showNav = this.showNav.bind(this);
-
         this.state = { showBurger : true }
     }
 
@@ -34,7 +33,7 @@ class Menu extends Component {
         return (
             <div>
                 <button onClick={this.showNav} className="nav__close">
-                    <h1>
+                    <h1 className="primary">
                     {   
                         this.state.showBurger
                         ? "\u2261"
@@ -46,6 +45,7 @@ class Menu extends Component {
                     <ul>
                         <li><NavLink onClick={this.showNav}  exact to="/" activeStyle={activeStyle}>Home</NavLink></li>
                         <li><NavLink onClick={this.showNav}  to="/about" activeStyle={activeStyle}>About</NavLink></li>
+                        <li><NavLink onClick={this.showNav}  to="/skills" activeStyle={activeStyle}>Skills</NavLink></li>
                         <li><NavLink onClick={this.showNav} to="/projects" activeStyle={activeStyle}>Projects</NavLink></li>                        
                         <li>
                             <span className="link__tip">This will open a new tab and take you out of this place!</span>

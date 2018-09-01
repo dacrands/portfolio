@@ -2,49 +2,18 @@ import React, { Component } from 'react';
 
 export default class Hello extends Component {
 
-    constructor() {
-        super();
-
-        this.state = {
-            skills: ['React', 'Redux', 'Express', 'Sass', 'Webpack', 'Git', 'MongoDB']
-        }
-    }
-
     render() {
         return(
             <div>
                 <div className="container">
                     <header className="header">
-                        <h1>About</h1>   
-                        <hr className="hr"/>
+                        <h1 className={"primary"}>About</h1>   
+                        {/* <hr className="hr"/> */}
                     </header>
                     <main className="about">                        
-                        <p className="strong">
-                            I really enjoy building fast, responsive, and intuitive React apps.
-                        </p>
-                        <p>
-                            I spend most of my time using the following tech:                   
-                        </p>
-                        <div className="lists">
-                            <ul>
-                                {
-                                    this.state.skills.slice(0,4).map(skill => {
-                                        return (
-                                            <li>{skill}</li>
-                                        )
-                                    })
-                                }
-                            </ul>
-                            <ul>
-                                {
-                                    this.state.skills.slice(4).map(skill => {
-                                        return (
-                                            <li>{skill}</li>
-                                        )
-                                    })
-                                }
-                            </ul>
-                        </div>                        
+                        <h3>
+                            I really enjoy building fast, responsive, and intuitive websites.
+                        </h3>                        
                         <div className="content">
                             <p>
                                 Although most of my current work involves the front-end, I am also familiar with

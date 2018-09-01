@@ -9,6 +9,7 @@ import {
 import Hello from './Hello';
 import Menu from './Menu';
 import About from './About';
+import Skills from './Skills';
 import Projects from './Projects';
 
 import '../assets/styles/main.scss';
@@ -23,6 +24,7 @@ const App = () => (
       <Route exact path="/" component={Hello} /> 
       <Route path="/about" component={About} /> 
       <Route path="/projects" component={Projects} /> 
+      <Route path="/skills" component={Skills} /> 
     </div>
   </Router>
 );
