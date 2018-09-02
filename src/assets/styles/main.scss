@@ -18,12 +18,12 @@ html {
     font-size: 16px;
     min-width: 300px;
     text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;  
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;  
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -238,20 +238,7 @@ h4 {
 // =======================
 .skills--item {
     margin-bottom: 3rem;    
-    span {
-        background: $primary;
-        color: $light;
-        margin: 0.35rem;        
-        margin-top: 0;
-        margin-left: 0;
-        padding: 0.5rem;
-        border-radius: 5px;
-        font-weight: 700;
-        transition: all 200ms ease-in;
-        &:hover {
-            background: $dark;
-        }
-    }    
+    
 
     div {
         // outline: 1px solid red;
@@ -261,6 +248,22 @@ h4 {
     }
     
 }
+
+.skill--span {
+    color: $primary;
+    border: 1px solid $primary;
+    margin: 0.35rem;        
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all 200ms ease-in;    
+    &:hover {
+        color: $dark;
+        border: 1px solid $dark;
+    }
+}    
 
 
 // =======================
@@ -282,9 +285,19 @@ h4 {
         color: $light;
         margin: .5rem 1em;   
         margin-left: 0;     
-        font-weight: 700;
+        font-weight: 700;    
+        span {
+            margin-right: 5px;
+            font-size: 1.4rem;
+            line-height: 0%;
+            transition: all 150ms ease;  
+        }
         &:hover {
             background: $primary-dark;
+            span {
+                padding-left: 5px;
+                margin-right: 0;                
+            }
         }
 
         &:last-of-type {
@@ -301,24 +314,50 @@ h4 {
     flex-wrap: wrap;
 }
 
-.project__features {
-    display: flex;    
-    padding: 1em;
+.project__features {      
+    padding: 1em 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    h3 {
+        color: $med;
+        &:first-of-type {
+            color: $primary;
+        }        
+    }
+
+    div{
+        &:last-of-type {    
+            h3 {
+                color: $med;
+            }
+            .project__list {
+                .skill--span {
+                    color: $med;
+                    border: 1px solid $med;
+                }                    
+            }                
+        }
+    }
 }
 
 .project__list {
-    p {
-        margin: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .skill--span {
+        font-size: 0.9rem;        
     }
 
-    ul {
-        padding: 0.5rem 0;
-        margin: 0 1rem;
-        margin-right: 2rem;
-    }
-    
+    // &:last-of-type {    
+    //     h3 {
+    //         color: $med;
+    //     }    
+    //     .skill--span {
+    //         color: $med;
+    //         border: 1px solid $med;
+    //     }                    
+    // }
 }
 
 .project__text {

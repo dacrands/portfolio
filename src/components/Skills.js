@@ -27,7 +27,7 @@ export default class Skills extends Component {
               <div>
                 {
                     this.state.skills.map(skill => {
-                        return <span>{skill}</span>
+                        return <span className={"skill--span"}>{skill}</span>
                     })
                 }
               </div>              
@@ -39,7 +39,7 @@ export default class Skills extends Component {
               <div>
                   {
                       this.state.lang.map(lang => {
-                          return <span>{lang}</span>
+                          return <span className={"skill--span"}>{lang}</span>
                       })
                   }
               </div>            
@@ -51,7 +51,7 @@ export default class Skills extends Component {
               <div>
                   {
                       this.state.libs.map(lib => {
-                          return <span>{lib}</span>
+                          return <span className={"skill--span"}>{lib}</span>
                       })
                   }
               </div>                            
@@ -63,7 +63,7 @@ export default class Skills extends Component {
               <div>
                   {
                       this.state.tools.map(tool => {
-                          return <span>{tool}</span>
+                          return <span className={"skill--span"}>{tool}</span>
                       })
                   }
               </div>                            

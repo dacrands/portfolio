@@ -37,8 +37,8 @@ export default class Projects extends Component {
                                     </div>
                                 </div>                                    
                                 <div className="project--links">
-                                    <a href="https://www.bergenstem.com" target="_blank">Bergen STEM</a>                       
-                                    <a href="#">Github Repo</a>                                                           
+                                    <a href="https://www.bergenstem.com" target="_blank">Bergen STEM <span>&rsaquo;</span></a>                       
+                                    <a href="#">Github Repo <span>&rsaquo;</span></a>                                                           
                                 </div>                                    
                             </div>                                                                
                             {/* </div> */}
@@ -48,22 +48,33 @@ export default class Projects extends Component {
                                 </video>
                             </div>
                             <div className="project__features">
-                                <div className="project__list">
-                                    <p className="strong">Features:</p>
-                                    <ul>
-                                        <li>responsive web design (no CSS libraries)</li>
-                                        <li>asset lazy loading</li>
-                                        <li>async fetch requests</li>                                        
-                                    </ul>
-                                </div> 
-                                <div className="project__list">
-                                    <p className="strong"> Tech used:</p>
-                                    <ul>
-                                        <li>Express</li>
-                                        <li>React Router 4</li>
-                                        <li>Webpack 4</li>                                    
-                                        <li>React Router</li>
-                                    </ul>
+                                <div>
+                                    <h3>Features:</h3>
+                                    <div className="project__list">                                
+                                        {
+                                            [
+                                                'responsive web design (no CSS libraries)', 
+                                                'asset lazy loading',
+                                                'async fetch requests'
+                                            ].map(skill => {
+                                                return <span className={"skill--span"}>{skill}</span>
+                                            })
+                                        }                                                                                                          
+                                    </div> 
+                                </div>                                
+                                <div>
+                                    <h3>Tech used:</h3>
+                                    <div className="project__list">
+                                    {
+                                        [
+                                            'Express', 
+                                            'React Router 4',
+                                            'Webpack 4'
+                                        ].map(skill => {
+                                            return <span className={"skill--span"}>{skill}</span>
+                                        })
+                                    }                                                                      
+                                    </div>                                    
                                 </div> 
                             </div>                                                        
                         </article>                        
@@ -85,8 +96,8 @@ export default class Projects extends Component {
                                 </div>
                                 
                                 <div className="project--links">
-                                    <a href="https://nytcrands.herokuapp.com/" target="_blank">NYT App</a>                       
-                                    <a href="#">Github Repo</a>                                                           
+                                    <a href="https://nytcrands.herokuapp.com/" target="_blank">NYT App <span>&rsaquo;</span></a>                       
+                                    <a href="#">Github Repo <span>&rsaquo;</span></a>                                                           
                                 </div>                                    
                             </div>                                                                                            
                             <div className="project__video">
@@ -95,24 +106,36 @@ export default class Projects extends Component {
                                 </video>
                             </div>
                             <div className="project__features">
-                                <div className="project__list">
-                                    <p className="strong">Features:</p>
-                                    <ul>
-                                        <li>responsive web design (no CSS libraries)</li>
-                                        <li>asset lazy loading</li>
-                                        <li>async fetch requests</li>
-                                        {/* <li>React Router</li> */}
-                                    </ul>
-                                </div> 
-                                <div className="project__list">
-                                    <p className="strong"> Tech used:</p>
-                                    <ul>
-                                        <li>Redux</li>
-                                        <li>React Router 4</li>
-                                        <li>Webpack 4</li>                                    
-                                        <li>Sass</li>
-                                    </ul>
-                                </div> 
+                                <div>
+                                    <h3>Features:</h3>
+                                    <div className="project__list">                                    
+                                        {
+                                            [
+                                                'responsive web design (no CSS libraries)', 
+                                                'asset lazy loading',
+                                                'thunk action handlers'
+                                            ].map(skill => {
+                                                return <span className={"skill--span"}>{skill}</span>
+                                            })
+                                        }                                     
+                                    </div> 
+                                </div>                                
+                                <div>
+                                    <h3>Tech used:</h3>
+                                    <div className="project__list">
+                                        
+                                        {
+                                            [
+                                                'Redux', 
+                                                'React Router 4',
+                                                'Webpack 4',
+                                                'Sass'
+                                            ].map(skill => {
+                                                return <span className={"skill--span"}>{skill}</span>
+                                            })
+                                        }                                     
+                                    </div>                                
+                                </div>                                
                             </div>                                                        
                         </article>
 
@@ -132,8 +155,8 @@ export default class Projects extends Component {
                                     </div>
                                 </div>                                    
                                 <div className="project--links">
-                                    <a href="https://dacrands.github.io" target="_blank">Blog Site</a> 
-                                    <a href="#">Github Repo</a>                                                                                 
+                                    <a href="https://dacrands.github.io" target="_blank">Blog Site <span>&rsaquo;</span></a> 
+                                    <a href="#">Github Repo <span>&rsaquo;</span></a>                                                                                 
                                 </div>                                    
                             </div>                                                                                            
                             <div className="project__video">
@@ -142,23 +165,36 @@ export default class Projects extends Component {
                                 </video>
                             </div>
                             <div className="project__features">
-                                <div className="project__list">
-                                    <p className="strong">Features:</p>
-                                    <ul>                                        
-                                        <li>Gitpage-hosted React app</li>
-                                        <li>Markdown-friendly blog</li>
-                                        <li>PrismJS syntax highlighting</li>
-                                    </ul>
-                                </div> 
-                                <div className="project__list">
-                                    <p className="strong"> Tech used:</p>
-                                    <ul>
-                                        <li>GatsbyJS</li>
-                                        <li>Styled-Components</li>
-                                        <li>GraphQl</li>
-                                    </ul>
-                                </div> 
-                            </div>                                                        
+                                <div>
+                                    <h3>Features:</h3>
+                                    <div className="project__list">                                    
+                                        {
+                                            [
+                                                'Gitpage-hosted React app', 
+                                                'Markdown-friendly blog',
+                                                'PrismJS syntax highlighting'
+                                            ].map(skill => {
+                                                return <span className={"skill--span"}>{skill}</span>
+                                            })
+                                        }                                     
+                                    </div> 
+                                </div>                                
+                                <div>
+                                    <h3>Tech used:</h3>
+                                    <div className="project__list">                                    
+                                        {
+                                            [
+                                                'GatsbyJS', 
+                                                'Styled-Components',
+                                                'Webpack 4',
+                                                'GraphQL'
+                                            ].map(skill => {
+                                                return <span className={"skill--span"}>{skill}</span>
+                                            })
+                                        }    
+                                    </div>                                 
+                                </div>                                
+                            </div>                                                                                       
                         </article> 
                     </section>
                 </div>                
