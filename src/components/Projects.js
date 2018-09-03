@@ -34,6 +34,11 @@ export default class Projects extends Component {
                                             Single page React app created for the STEM Department at
                                             Bergen Community College.
                                         </p>   
+                                        <p>
+                                            Collaborated with backend-developer to create a site that
+                                            showcases student projects, STEM events, and scholarship
+                                            opportunities.
+                                        </p>
                                     </div>
                                 </div>                                    
                                 <div className="project--links">
@@ -55,7 +60,8 @@ export default class Projects extends Component {
                                             [
                                                 'responsive web design (no CSS libraries)', 
                                                 'asset lazy loading',
-                                                'async fetch requests'
+                                                'async fetch requests',
+                                                'CORS'
                                             ].map(skill => {
                                                 return <span className={"skill--span"}>{skill}</span>
                                             })
@@ -67,9 +73,11 @@ export default class Projects extends Component {
                                     <div className="project__list">
                                     {
                                         [
+                                            'React',
                                             'Express', 
                                             'React Router 4',
-                                            'Webpack 4'
+                                            'Webpack 4',
+                                            'Fetch API'
                                         ].map(skill => {
                                             return <span className={"skill--span"}>{skill}</span>
                                         })
@@ -126,6 +134,7 @@ export default class Projects extends Component {
                                         
                                         {
                                             [
+                                                'React',
                                                 'Redux', 
                                                 'React Router 4',
                                                 'Webpack 4',
@@ -145,12 +154,10 @@ export default class Projects extends Component {
                                     <h2 className="strong">GatsbyJS Markdown Blog</h2>
                                     <div className="project__text-p content"> 
                                         <p>
-                                            The NYT API allows you to access their archives, which contains
-                                            articles dating back to the 19<sup>th</sup> century.                                         
+                                            <a href="https://www.gatsbyjs.org/">GatsbyJS</a> build hosted on gitpages.                                         
                                         </p>                                                     
                                         <p>
-                                            Set a custom year range between the years 1900 and 2018
-                                            and read hundreds of article abstracts from a random month.
+                                            Features a markdown blog that supports YAML front matter.
                                         </p>          
                                     </div>
                                 </div>                                    
@@ -172,7 +179,8 @@ export default class Projects extends Component {
                                             [
                                                 'Gitpage-hosted React app', 
                                                 'Markdown-friendly blog',
-                                                'PrismJS syntax highlighting'
+                                                'PrismJS syntax highlighting',
+                                                'YAML Front Matter'
                                             ].map(skill => {
                                                 return <span className={"skill--span"}>{skill}</span>
                                             })
@@ -184,9 +192,9 @@ export default class Projects extends Component {
                                     <div className="project__list">                                    
                                         {
                                             [
+                                                'React',
                                                 'GatsbyJS', 
                                                 'Styled-Components',
-                                                'Webpack 4',
                                                 'GraphQL'
                                             ].map(skill => {
                                                 return <span className={"skill--span"}>{skill}</span>

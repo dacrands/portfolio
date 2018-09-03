@@ -6,9 +6,10 @@ export default class Skills extends Component {
     super();
 
     this.state = {
-        lang: ['Python', 'NodeJS', 'JavaScript','HTML', 'CSS'],
-        tools: ['Git', 'Heroku', 'VSCode'],
-        libs: ['React', 'Redux', 'Express', 'Sass', 'Webpack','MongoDB'],
+        lang: ['JavaScript','NodeJS', 'Python', 'HTML', 'CSS'],
+        tools: ['Git', 'Heroku', 'Conda', 'Pip', 'Jupyter Notebooks', 'VSCode'],
+        webLibs: ['React', 'Redux', 'Express', 'Sass', 'Webpack','MongoDB'],
+        dataLibs: ['Numpy', 'Pandas', 'Matplotlib', 'Seaborn'],
         skills: ['Responsive Web Design', 'Semantic HTML', 'REST APIs', 'Ajax', 'Data Visualization', 'Public Speaking']
     }
   }
@@ -46,11 +47,23 @@ export default class Skills extends Component {
             </section>
 
             <section className="skills--item">
-              <h3 className="">Libraries</h3>
+              <h3 className="">Web Development Libraries</h3>
               {/* <hr className="hr"/> */}
               <div>
                   {
-                      this.state.libs.map(lib => {
+                      this.state.webLibs.map(lib => {
+                          return <span className={"skill--span"}>{lib}</span>
+                      })
+                  }
+              </div>                            
+            </section>
+
+            <section className="skills--item">
+              <h3 className="">Data Science Libraries</h3>
+              {/* <hr className="hr"/> */}
+              <div>
+                  {
+                      this.state.dataLibs.map(lib => {
                           return <span className={"skill--span"}>{lib}</span>
                       })
                   }
