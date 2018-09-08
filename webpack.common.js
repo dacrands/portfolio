@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
+
+
 module.exports = {
   entry: {
     app: './src/index.js'
@@ -11,7 +13,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'David Crandall'
+      title: 'David Crandall',
+      favicon: './src/assets/images/favicon.png'
     })
   ],
   output: {

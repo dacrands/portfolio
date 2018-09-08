@@ -38,8 +38,8 @@ body {
     max-width: 100%;
     height: auto;
     max-height: 350px;    
-    -webkit-filter: hue-rotate(180deg);
-    filter: hue-rotate(180deg);       
+    -webkit-filter: hue-rotate(10deg);
+    filter: hue-rotate(328deg);       
 }
 
 
@@ -131,6 +131,42 @@ h4 {
     padding: 0 2em;
 }
 
+.contact {
+    input[type=button], 
+    input[type=submit] {
+        border: none;
+        background: $primary;
+        color: $light;
+        font-size: 1.2rem;
+        padding: 0.4em;
+        transition: all 200ms ease;
+        margin-bottom: 2rem;
+        &:hover {
+            cursor: pointer;
+            background: $primary-dark;
+        }
+    }
+}
+
+
+.contact__item{    
+    display: block;
+    margin: 3rem 0;    
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }    
+    input {                
+        border: none;
+        border-bottom: 1px solid $med;
+    }
+
+    textarea {
+        border: none;
+        border-left: 1px solid $med;
+        padding: 0.5rem;
+    }
+}
 
 
 // =======================

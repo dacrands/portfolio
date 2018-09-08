@@ -11,6 +11,7 @@ import Menu from './Menu';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact';
 
 import '../assets/styles/main.scss';
 
@@ -25,6 +26,7 @@ const App = () => (
       <Route path="/about" component={About} /> 
       <Route path="/projects" component={Projects} /> 
       <Route path="/skills" component={Skills} /> 
+      <Route path="/contact" component={Contact} /> 
     </div>
   </Router>
 );
