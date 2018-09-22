@@ -63,7 +63,7 @@ export default class Projects extends Component {
                                                 'async fetch requests',
                                                 'CORS'
                                             ].map(skill => {
-                                                return <span className={"skill--span"}>{skill}</span>
+                                                return <span className={"skills__span"}>{skill}</span>
                                             })
                                         }                                                                                                          
                                     </div> 
@@ -79,7 +79,7 @@ export default class Projects extends Component {
                                             'Webpack 4',
                                             'Fetch API'
                                         ].map(skill => {
-                                            return <span className={"skill--span"}>{skill}</span>
+                                            return <span className={"skills__span"}>{skill}</span>
                                         })
                                     }                                                                      
                                     </div>                                    
@@ -123,7 +123,7 @@ export default class Projects extends Component {
                                                 'asset lazy loading',
                                                 'thunk action handlers'
                                             ].map(skill => {
-                                                return <span className={"skill--span"}>{skill}</span>
+                                                return <span className={"skills__span"}>{skill}</span>
                                             })
                                         }                                     
                                     </div> 
@@ -140,7 +140,7 @@ export default class Projects extends Component {
                                                 'Webpack 4',
                                                 'Sass'
                                             ].map(skill => {
-                                                return <span className={"skill--span"}>{skill}</span>
+                                                return <span className={"skills__span"}>{skill}</span>
                                             })
                                         }                                     
                                     </div>                                
@@ -182,7 +182,7 @@ export default class Projects extends Component {
                                                 'PrismJS syntax highlighting',
                                                 'YAML Front Matter'
                                             ].map(skill => {
-                                                return <span className={"skill--span"}>{skill}</span>
+                                                return <span className={"skills__span"}>{skill}</span>
                                             })
                                         }                                     
                                     </div> 
@@ -197,7 +197,7 @@ export default class Projects extends Component {
                                                 'Styled-Components',
                                                 'GraphQL'
                                             ].map(skill => {
-                                                return <span className={"skill--span"}>{skill}</span>
+                                                return <span className={"skills__span"}>{skill}</span>
                                             })
                                         }    
                                     </div>                                 

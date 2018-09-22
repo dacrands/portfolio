@@ -22,61 +22,61 @@ export default class Skills extends Component {
           <h1 className="primary">Skills</h1>
         </header>
         
-          <section className="skills--item">
-              <h3 className="">Skills</h3>
+          <section className="skills__item">
+              <h2 className="">Skills</h2>
               {/* <hr className="hr"/> */}
               <div>
                 {
                     this.state.skills.map(skill => {
-                        return <span className={"skill--span"}>{skill}</span>
+                        return <span className={"skills__span"}>{skill}</span>
                     })
                 }
               </div>              
             </section>
 
-            <section className="skills--item">
-              <h3 className="">Languages</h3>
+            <section className="skills__item">
+              <h2 className="">Languages</h2>
               {/* <hr className="hr"/> */}
               <div>
                   {
                       this.state.lang.map(lang => {
-                          return <span className={"skill--span"}>{lang}</span>
+                          return <span className={"skills__span"}>{lang}</span>
                       })
                   }
               </div>            
             </section>
 
-            <section className="skills--item">
-              <h3 className="">Web Development Libraries</h3>
+            <section className="skills__item">
+              <h2 className="">Web Development Libraries</h2>
               {/* <hr className="hr"/> */}
               <div>
                   {
                       this.state.webLibs.map(lib => {
-                          return <span className={"skill--span"}>{lib}</span>
+                          return <span className={"skills__span"}>{lib}</span>
                       })
                   }
               </div>                            
             </section>
 
-            <section className="skills--item">
-              <h3 className="">Data Science Libraries</h3>
+            <section className="skills__item">
+              <h2 className="">Data Science Libraries</h2>
               {/* <hr className="hr"/> */}
               <div>
                   {
                       this.state.dataLibs.map(lib => {
-                          return <span className={"skill--span"}>{lib}</span>
+                          return <span className={"skills__span"}>{lib}</span>
                       })
                   }
               </div>                            
             </section>
 
-            <section className="skills--item">
-              <h3 className="">Tools</h3>
+            <section className="skills__item">
+              <h2 className="">Tools</h2>
               {/* <hr className="hr"/> */}
               <div>
                   {
                       this.state.tools.map(tool => {
-                          return <span className={"skill--span"}>{tool}</span>
+                          return <span className={"skills__span"}>{tool}</span>
                       })
                   }
               </div>                            

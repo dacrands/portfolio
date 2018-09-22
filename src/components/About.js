@@ -28,7 +28,7 @@ export default class Hello extends Component {
 
               <p>You may view some of my work on my <a href="https://github.com/dacrands">github</a>.</p>
               <p>To learn more about what I do, feel free to view my <a href="https://dacrands.github.io">blog</a> or <a href="mailto:davecrands@gmail.com">email me</a>.                            </p>
-              <img className="img" src={Logo} alt="" />
+              <img className="img about__img" src={Logo} alt="" />
             </div>
           </main>
         </div>

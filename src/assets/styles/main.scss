@@ -42,7 +42,6 @@ body {
     filter: hue-rotate(328deg);       
 }
 
-
 p,
 li {
     line-height: 135%;
@@ -227,7 +226,7 @@ h4 {
     background: none; 
     border: none;
     position: absolute;
-    z-index: 999;
+    z-index: 3;
     top: 1rem;
     right: 1rem;    
 
@@ -272,7 +271,7 @@ h4 {
 // =======================
 //          SKILLS
 // =======================
-.skills--item {
+.skills__item {
     margin-bottom: 2.8rem;    
 
     div {
@@ -284,7 +283,7 @@ h4 {
     
 }
 
-.skill--span {
+.skills__span {
     color: $primary;
     border: 1px solid $primary;
     margin: 0.35rem;        
@@ -295,6 +294,7 @@ h4 {
     font-weight: 700;
     transition: all 200ms ease-in;    
 }    
+
 
 
 // =======================
@@ -362,7 +362,7 @@ h4 {
                 color: $med;
             }
             .project__list {
-                .skill--span {
+                .skills__span {
                     color: $med;
                     border: 1px solid $med;
                 }                    
@@ -376,7 +376,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
 
-    .skill--span {
+    .skills__span {
         font-size: 0.9rem; 
         padding: 0.25rem;          
     }
@@ -463,7 +463,7 @@ h4 {
     .nav {
         transform: translateX(-100%);
         width: 100%;        
-
+        z-index: 2;
         li {
             text-align: center;
         }

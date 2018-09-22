@@ -13,6 +13,9 @@ class Menu extends Component {
   }
 
   showNav() {
+    this.state.showBurger 
+    ? document.body.style.overflow = "hidden"
+    : document.body.style.overflow = "auto"
     this.refs.nav.classList.toggle('nav__show');
     const tempBool = this.state.showBurger;
     this.setState({ showBurger: !tempBool });
