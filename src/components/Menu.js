@@ -13,7 +13,7 @@ class Menu extends Component {
   }
 
   showNav() {
-    this.state.showBurger 
+    this.state.showBurger && window.innerWidth < 768
     ? document.body.style.overflow = "hidden"
     : document.body.style.overflow = "auto"
     this.refs.nav.classList.toggle('nav__show');
@@ -23,6 +23,7 @@ class Menu extends Component {
 
   componentDidMount() {
     window.addEventListener('resize', () => {
+      document.body.style.overflow = "auto"
       this.refs.nav.classList.remove('nav__show')
       this.setState({ showBurger: true })
     });

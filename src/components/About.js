@@ -14,9 +14,9 @@ export default class Hello extends Component {
             {/* <hr className="hr"/> */}
           </header>
           <main className="about">
-            <h3>
+            <h2>
               I really enjoy building fast, responsive, and intuitive websites.
-                        </h3>
+                        </h2>
             <div className="content">
               <p>
                 Although most of my current work involves the front-end, I am also familiar with
