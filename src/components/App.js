@@ -10,7 +10,7 @@ import Hello from './Hello';
 import Menu from './Menu';
 import About from './About';
 import Skills from './Skills';
-import Projects from './Projects';
+import Portfolio from './Portfolio';
 import Contact from './Contact';
 
 import '../assets/styles/main.scss';
@@ -24,7 +24,7 @@ const App = () => (
       
       <Route exact path="/" component={Hello} /> 
       <Route path="/about" component={About} /> 
-      <Route path="/projects" component={Projects} /> 
+      <Route path="/portfolio" component={Portfolio} /> 
       <Route path="/skills" component={Skills} /> 
       <Route path="/contact" component={Contact} /> 
     </div>

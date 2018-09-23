@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-$font-stack: 'Roboto', sans-serif;
+$font-stack: 'Open Sans', sans-serif;;
 $light: #eee;
 $dark: #333536;
 $med: #646769;
@@ -40,6 +41,17 @@ body {
     max-height: 350px;    
     -webkit-filter: hue-rotate(10deg);
     filter: hue-rotate(328deg);       
+}
+
+.about__img {
+    opacity: 0;
+    transition: all 500ms;
+    margin-top: -20px;
+}
+
+.about__img--show {
+    opacity: 1;
+    margin-top: 0;
 }
 
 p,
@@ -290,7 +302,7 @@ h4 {
     margin-top: 0;
     margin-left: 0;
     padding: 0.5rem;
-    border-radius: 5px;
+    border-radius: .3rem;
     font-weight: 700;
     transition: all 200ms ease-in;    
 }    
@@ -305,7 +317,7 @@ h4 {
     border-radius: 5px;        
 }
 
-.project--links {
+.project__links {
     display: flex;
     flex-wrap: wrap;
     a {
@@ -313,10 +325,12 @@ h4 {
         margin: .5rem 1em;  
         margin-left: 0;            
         padding: 0.5rem;
-        border-radius: 5px;        
+        padding: .9rem 1.1rem;
+        border-radius: 2px;        
         background: $primary;
         color: $light;                 
         font-weight: 700;  
+        font-size: 14px;
         text-decoration: none; 
         transition: all 200ms ease;   
         span {
@@ -364,7 +378,7 @@ h4 {
             .project__list {
                 .skills__span {
                     color: $med;
-                    border: 1px solid $med;
+                    border: 1px solid $med;                    
                 }                    
             }                
         }
@@ -377,19 +391,10 @@ h4 {
     flex-wrap: wrap;
 
     .skills__span {
-        font-size: 0.9rem; 
-        padding: 0.25rem;          
+        font-size: 0.9rem;           
+        padding: 0.5rem;
+        border-radius: .3rem;      
     }
-
-    // &:last-of-type {    
-    //     h3 {
-    //         color: $med;
-    //     }    
-    //     .skill--span {
-    //         color: $med;
-    //         border: 1px solid $med;
-    //     }                    
-    // }
 }
 
 .project__text {

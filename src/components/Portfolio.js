@@ -22,7 +22,7 @@ export default class Projects extends Component {
       <div>
         <div className="container">
           <header className="header">
-            <h1 className="primary">Projects</h1>
+            <h1 className="primary">Portfolio</h1>
             {/* <hr className="hr"/> */}
           </header>
           <section className="projects">
@@ -42,9 +42,9 @@ export default class Projects extends Component {
                                         </p>
                   </div>
                 </div>
-                <div className="project--links">
+                <div className="project__links">
                   <a href="https://www.bergenstem.com" target="_blank">Bergen STEM <span>&rsaquo;</span></a>
-                  <a href="#">Github Repo <span>&rsaquo;</span></a>
+                  <a href="https://github.com/dacrands/bergen-reactpack">Github Repo <span>&rsaquo;</span></a>
                 </div>
               </div>
               {/* </div> */}
@@ -104,9 +104,9 @@ export default class Projects extends Component {
                   </div>
                 </div>
 
-                <div className="project--links">
+                <div className="project__links">
                   <a href="https://nytcrands.herokuapp.com/" target="_blank">NYT App <span>&rsaquo;</span></a>
-                  <a href="#">Github Repo <span>&rsaquo;</span></a>
+                  <a href="https://github.com/dacrands/times-app">Github Repo <span>&rsaquo;</span></a>
                 </div>
               </div>
               <div className="project__video">
@@ -162,9 +162,9 @@ export default class Projects extends Component {
                                         </p>
                   </div>
                 </div>
-                <div className="project--links">
+                <div className="project__links">
                   <a href="https://dacrands.github.io" target="_blank">Blog Site <span>&rsaquo;</span></a>
-                  <a href="#">Github Repo <span>&rsaquo;</span></a>
+                  <a href="https://github.com/dacrands/dacrands.github.io">Github Repo <span>&rsaquo;</span></a>
                 </div>
               </div>
               <div className="project__video">
@@ -219,9 +219,9 @@ export default class Projects extends Component {
                                         </p>
                   </div>
                 </div>
-                <div className="project--links">
-                  <a href="https://dacrands.github.io" target="_blank">Blog Site <span>&rsaquo;</span></a>
-                  <a href="#">Github Repo <span>&rsaquo;</span></a>
+                <div className="project__links">
+                  <a href="https://github.com/dacrands/flask-smart-monitor" target="_blank">Coming soon <span>&rsaquo;</span></a>
+                  <a href="https://github.com/dacrands/flask-smart-monitor">Github Repo <span>&rsaquo;</span></a>
                 </div>
               </div>
               <div className="project__video">

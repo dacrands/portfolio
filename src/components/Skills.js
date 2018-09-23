@@ -6,9 +6,9 @@ export default class Skills extends Component {
     super();
 
     this.state = {
-        lang: ['JavaScript','NodeJS', 'Python', 'HTML', 'CSS'],
-        tools: ['Git', 'Heroku', 'Conda', 'Pip', 'Jupyter Notebooks', 'VSCode'],
-        webLibs: ['React', 'Redux', 'Express', 'Sass', 'Webpack','MongoDB'],
+        lang: ['JavaScript', 'Python', 'NodeJS', 'HTML', 'CSS'],
+        tools: ['Git', 'Heroku', 'Postman', 'Conda', 'Pip', 'Jupyter Notebooks', 'VSCode'],
+        webLibs: ['React', 'Redux', 'Flask','Express', 'Sass', 'Webpack','MongoDB'],
         dataLibs: ['Numpy', 'Pandas', 'Matplotlib', 'Seaborn'],
         skills: ['Responsive Web Design', 'Semantic HTML', 'REST APIs', 'Ajax', 'Data Visualization', 'Public Speaking']
     }

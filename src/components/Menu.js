@@ -44,9 +44,9 @@ class Menu extends Component {
         <nav ref="nav" className="nav">
           <ul>
             <li><NavLink onClick={this.showNav} exact to="/" activeStyle={activeStyle}>Home</NavLink></li>
+            <li><NavLink onClick={this.showNav} to="/portfolio" activeStyle={activeStyle}>Portfolio</NavLink></li>
             <li><NavLink onClick={this.showNav} to="/about" activeStyle={activeStyle}>About</NavLink></li>
-            <li><NavLink onClick={this.showNav} to="/skills" activeStyle={activeStyle}>Skills</NavLink></li>
-            <li><NavLink onClick={this.showNav} to="/projects" activeStyle={activeStyle}>Projects</NavLink></li>
+            <li><NavLink onClick={this.showNav} to="/skills" activeStyle={activeStyle}>Skills</NavLink></li>            
             <li>
               <span className="link__tip">This will open a new tab and take you out of this place!</span>
               <a onClick={this.showNav} target="_blank" href="https://dacrands.github.io/">Blog</a>
