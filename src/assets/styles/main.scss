@@ -454,9 +454,15 @@ h4 {
     }
 }
 
-@media(max-width:505px) {
+@media(max-width:545px) {
     .h1 {
-        font-size: 12vw;
+        font-size: 10vw;
+    }  
+}
+
+@media(max-width: 400px) {
+    .h2 {
+        font-size: 6vw;
     }
 }
 

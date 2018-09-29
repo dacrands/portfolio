@@ -6,17 +6,6 @@ import blog from '../assets/video/blog.mp4';
 import flaskmon from '../assets/video/flaskmon.mp4';
 
 export default class Projects extends Component {
-
-  componentDidMount() {
-    // document.body.style.background = "#1f74d4";
-  }
-
-  componentWillUnmount() {
-    document.body.style.background = null;
-  }
-
-  com
-
   render() {
     return (
       <div>
@@ -26,6 +15,10 @@ export default class Projects extends Component {
             {/* <hr className="hr"/> */}
           </header>
           <section className="projects">
+
+            {/* ============
+              Bergen STEM
+            ============ */}
             <article className="project">
               <div className="project__text">
                 <div>
@@ -88,6 +81,10 @@ export default class Projects extends Component {
               </div>
             </article>
 
+
+            {/* ============
+              NYT API
+            ============ */}
             <article className="project">
               <div className="project__text">
                 <div>
@@ -149,6 +146,69 @@ export default class Projects extends Component {
               </div>
             </article>
 
+            {/* ============
+              FLASK FRAME
+            ============ */}
+            <article className="project">
+              <div className="project__text">
+                <div>
+                  <h2 className="strong">Flask Smart Frame</h2>
+                  <div className="project__text-p content">
+                    <p>
+                      View the weather, stocks, and a custom yotube video.
+                                        </p>
+                    <p>
+
+                    </p>
+                  </div>
+                </div>
+                <div className="project__links">
+                  <a href="https://github.com/dacrands/flask-smart-monitor" target="_blank">Coming soon <span>&rsaquo;</span></a>
+                  <a href="https://github.com/dacrands/flask-smart-monitor">Github Repo <span>&rsaquo;</span></a>
+                </div>
+              </div>
+              <div className="project__video">
+                <video className="video" autoPlay loop playsInline>
+                  <source src={flaskmon} />
+                </video>
+              </div>
+              <div className="project__features">
+                <div>
+                  <h3>Features:</h3>
+                  <div className="project__list">
+                    {
+                      [
+                        'Scrolling stock ticker',
+                        'Asynchronously load Youtube videos',
+
+                      ].map(skill => {
+                        return <span className={"skills__span"}>{skill}</span>
+                      })
+                    }
+                  </div>
+                </div>
+                <div>
+                  <h3>Tech used:</h3>
+                  <div className="project__list">
+                    {
+                      [
+                        'Flask',
+                        'Bcrypt',
+                        'Youtube iFrame API',
+                        'Jinja2 Templates',
+                      ].map(skill => {
+                        return <span className={"skills__span"}>{skill}</span>
+                      })
+                    }
+                  </div>
+                </div>
+              </div>
+            </article>
+
+
+            {/* ============
+              BLOG
+            ============ */}
             <article className="project">
               <div className="project__text">
                 <div>
@@ -206,60 +266,7 @@ export default class Projects extends Component {
               </div>
             </article>
 
-            <article className="project">
-              <div className="project__text">
-                <div>
-                  <h2 className="strong">Flask Smart Frame</h2>
-                  <div className="project__text-p content">
-                    <p>
-                      View the weather, stocks, and a custom yotube video.
-                                        </p>
-                    <p>
-                      
-                                        </p>
-                  </div>
-                </div>
-                <div className="project__links">
-                  <a href="https://github.com/dacrands/flask-smart-monitor" target="_blank">Coming soon <span>&rsaquo;</span></a>
-                  <a href="https://github.com/dacrands/flask-smart-monitor">Github Repo <span>&rsaquo;</span></a>
-                </div>
-              </div>
-              <div className="project__video">
-                <video className="video" autoPlay loop playsInline>
-                  <source src={flaskmon} />
-                </video>
-              </div>
-              <div className="project__features">
-                <div>
-                  <h3>Features:</h3>
-                  <div className="project__list">
-                    {
-                      [
-                        'Scrolling stock ticker',
-                        'Asynchronously load Youtube videos',
-                      
-                      ].map(skill => {
-                        return <span className={"skills__span"}>{skill}</span>
-                      })
-                    }
-                  </div>
-                </div>
-                <div>
-                  <h3>Tech used:</h3>
-                  <div className="project__list">
-                    {
-                      [
-                        'Flask',
-                        'Youtube iFrame API',
-                        'Jinja2 Templates',                        
-                      ].map(skill => {
-                        return <span className={"skills__span"}>{skill}</span>
-                      })
-                    }
-                  </div>
-                </div>
-              </div>
-            </article>
+
           </section>
         </div>
       </div>
