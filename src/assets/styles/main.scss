@@ -142,22 +142,37 @@ h4 {
     padding: 0 2em;
 }
 
-.contact {
-    input[type=button], 
-    input[type=submit] {
-        border: none;
-        background: $primary;
-        color: $light;
-        font-size: 1.2rem;
-        padding: 0.4em;
-        transition: all 200ms ease;
-        margin-bottom: 2rem;
-        &:hover {
-            cursor: pointer;
-            background: $primary-dark;
+
+.button {
+    margin: .5rem 1em;  
+    margin-left: 0;            
+    padding: 0.5rem;
+    padding: .9rem 1.1rem;
+    border-radius: 2px;        
+    border: none;
+    background: $primary;
+    color: $light;                 
+    font-weight: 700;  
+    font-size: 14px;
+    text-decoration: none; 
+    transition: all 150ms ease;   
+    span {
+        margin-right: 5px;            
+        line-height: 0%;
+        font-size: 1.4rem;
+        transition: all 200ms ease;  
+    }
+
+    &:hover {
+        background: $primary-dark;
+        cursor: pointer;
+        span {
+            padding-left: 5px;
+            margin-right: 0;                
         }
     }
 }
+
 
 
 .contact__item{    
@@ -317,10 +332,10 @@ h4 {
     border-radius: 5px;        
 }
 
-.project__links {
+.project__links{
     display: flex;
     flex-wrap: wrap;
-    a {
+    a  {
         // color: $light;    
         margin: .5rem 1em;  
         margin-left: 0;            
