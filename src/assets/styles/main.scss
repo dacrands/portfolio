@@ -422,13 +422,14 @@ h4 {
 .project__video {    
     // background: rgb(39, 40, 41);
     position: relative;
-    min-height: 500px;
+    height: 100%;
+    // min-height: 500px;
 }
     
 .disc__item {
 /*   background: blue; */
     position: absolute;
-    top: 250px;    
+    top: 50%;    
     left: 50%;    
     margin-top: -35px;
     margin-left: -35px;
