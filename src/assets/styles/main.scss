@@ -420,7 +420,51 @@ h4 {
 }
 
 .project__video {    
-    background: rgb(39, 40, 41);
+    // background: rgb(39, 40, 41);
+    position: relative;
+    height: 500px;
+}
+    
+.disc__item {
+/*   background: blue; */
+    position: absolute;
+    top: 50%;    
+    left: 50%;    
+    margin-top: -35px;
+    margin-left: -35px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 5px solid white;
+    border-left-color: blue;
+    border-right-color: blue;  
+    transition: all 300ms ease;
+    animation: 1000ms infinite spin;
+    padding: 5px;  z-index: -2;
+}
+
+@keyframes spin {
+    0% {
+    transform: rotate(0deg);   
+    // width: inherit;
+    // height: inherit;
+    }
+    
+    50% {
+/*     transform: rotate(360deg);  */
+    // margin-top: 15px;
+    // margin-left: 15px;
+    // width: 70px;
+    // height: 70px;
+    }
+    
+    100% {
+    transform: rotate(360deg);   
+    // width: inherit;
+    // height: inherit;
+    }
+    
+    
 }
 
 @media(min-width: 768px) {

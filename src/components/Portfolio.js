@@ -42,6 +42,7 @@ export default class Projects extends Component {
               </div>
               {/* </div> */}
               <div className="project__video">
+                <div className="disc__item"></div>
                 <video className="video" autoPlay loop playsInline>
                   <source src={bergen} type="video/mp4" />
                 </video>
@@ -107,6 +108,7 @@ export default class Projects extends Component {
                 </div>
               </div>
               <div className="project__video">
+                <div className="disc__item"></div>
                 <video className="video" autoPlay loop playsInline>
                   <source src={nyt} />
                 </video>
@@ -158,7 +160,7 @@ export default class Projects extends Component {
                       Check the weather, view stock prices, add a custom Youtube background-video.
                                         </p> */}
                     <p>
-                      Once users verify their email address, they will have access to 
+                      Once users verify their email address, they will have access to
                       the <strong>SmartFrame</strong> &mdash; an app where they will be able
                       to do the following:
 
@@ -178,6 +180,7 @@ export default class Projects extends Component {
                 </div>
               </div>
               <div className="project__video">
+                <div className="disc__item"></div>
                 <video className="video" autoPlay loop playsInline>
                   <source src={flaskmon} />
                 </video>
@@ -242,6 +245,7 @@ export default class Projects extends Component {
                 </div>
               </div>
               <div className="project__video">
+                <div className="disc__item"></div>                
                 <video className="video" autoPlay loop playsInline>
                   <source src={blog} />
                 </video>
