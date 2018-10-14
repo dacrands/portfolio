@@ -154,16 +154,26 @@ export default class Projects extends Component {
                 <div>
                   <h2 className="strong">Flask Smart Frame</h2>
                   <div className="project__text-p content">
+                    {/* <p>
+                      Check the weather, view stock prices, add a custom Youtube background-video.
+                                        </p> */}
                     <p>
-                      View the weather, stocks, and a custom yotube video.
-                                        </p>
-                    <p>
+                      Once users verify their email address, they will have access to 
+                      the <strong>SmartFrame</strong> &mdash; an app where they will be able
+                      to do the following:
 
+                      <ul>
+                        <li>Configure a location for weather information</li>
+                        <li>Easily add/remove stocks to appear in the scrolling stock-ticker</li>
+                        <li>Use Youtube embed codes to
+                          asynchronously set a background-video.
+                        </li>
+                      </ul>
                     </p>
                   </div>
                 </div>
                 <div className="project__links">
-                  <a href="https://github.com/dacrands/flask-smart-monitor" target="_blank">Coming soon <span>&rsaquo;</span></a>
+                  <a href="https://flaskframe.herokuapp.com/" target="_blank">Flask Frame <span>&rsaquo;</span></a>
                   <a href="https://github.com/dacrands/flask-smart-monitor">Github Repo <span>&rsaquo;</span></a>
                 </div>
               </div>
@@ -179,8 +189,9 @@ export default class Projects extends Component {
                     {
                       [
                         'Scrolling stock ticker',
+                        'Set weather location',
                         'Asynchronously load Youtube videos',
-
+                        'Email authentication',
                       ].map(skill => {
                         return <span className={"skills__span"}>{skill}</span>
                       })
@@ -193,9 +204,12 @@ export default class Projects extends Component {
                     {
                       [
                         'Flask',
+                        'Postgresql',
                         'Bcrypt',
+                        'Flash messages',
                         'Youtube iFrame API',
                         'Jinja2 Templates',
+                        'Sendgrid',
                       ].map(skill => {
                         return <span className={"skills__span"}>{skill}</span>
                       })
