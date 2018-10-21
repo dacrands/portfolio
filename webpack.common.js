@@ -14,7 +14,8 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'David Crandall',
-      favicon: './src/assets/images/favicon.png'
+      favicon: './src/assets/images/favicon.png',
+      template: 'index.html',
     })
   ],
   output: {
